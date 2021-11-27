@@ -157,7 +157,7 @@ Follow these steps:
 
 - In the Azure portal, navigate to the VNET Gateway named VPNGW in resource group p2s-vpn-gw, click Point-to-site-configuration under Settings. Then click Download VPN client at the top of the page.
 
-![image](images\DownloadVPNclient.png)
+![image](images/DownloadVPNclient.png)
 
 - Save the VPNGW.zip file and extract it. 
   
@@ -183,28 +183,28 @@ Follow these steps:
   
 - Tap the attachment and then tap the "send to" icon top right. Select "Share file ...".
 
-![image](images\sharefile-resize.png)
+![image](images/sharefile-resize.png)
 
 
 - Select OpenVPN.
 
-![image](images\selectOpenVPN-resize.png)
+![image](images/selectOpenVPN-resize.png)
 
 - In OpenVPN, select ADD.
 
-![image](images\add-resized.png)
+![image](images/add-resized.png)
   
 - Check "Connect after import" and select ADD.
 
-![images](images\connectafterimport-resized.PNG)
+![images](images/connectafterimport-resized.PNG)
 
 - The connection will establish immediately.
 
-![image](images\connected-resized.png)
+![image](images/connected-resized.png)
 
 - On your device, browse to https://www.whatismyipaddress.com and verify that the public IP address and location correspond with PIP and Azure deployment region of your CSR NVA.
 
-![image](images\ipaddress-resized.PNG)
+![image](images/ipaddress-resized.PNG)
 
 You are now accessing the internet from your remote device via the internet gateway in Azure.
 
@@ -220,11 +220,11 @@ You are now accessing the internet from your remote device via the internet gate
 
 - The Certificate Import Wizard opens.
 
-![image](images\certimport.png)
+![image](images/certimport.png)
 
 - Click Next and Next again. Enter the private key password `Nienke04`.
 
-![image](images\pkpassword.png)
+![image](images/pkpassword.png)
 
 - Click Next, continue keeping all defaults on the following screens.
 
@@ -234,24 +234,25 @@ You are now accessing the internet from your remote device via the internet gate
 
 - In the VPNGW folder extracted earlier, open the AzureVPN folder and select and open the azurevpnconfig.xml file.
 
-![image](images\vpnclientimport.png)
+![image](images/vpnclientimport.png)
 
 - On the next screen, select Save.
 
-![image](images\vpnclientsave.png)
+![image](images/vpnclientsave.png)
 
 - The connection is now available. 
   
-![image](images\vpnclientavailable.png)
+![image](images/vpnclientavailable.png)
   
 - Click Connect. You are now connected.
 
-![image](images\vpnclientconnected.png)
+![image](images/vpnclientconnected.png)
 
 - Browse to https://www.whatismyipaddress.com and verify that the public IP address and location correspond with PIP and Azure deployment region of your CSR NVA.
 
-![image](images\ipddress-pc.png)
+![image](images/ipddress-pc.png)
 
+You are now accessing the internet from your Windows pc via the internet gateway in Azure.
 
 
 
