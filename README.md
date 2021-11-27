@@ -250,7 +250,7 @@ You are now accessing the internet from your remote device via the internet gate
 
 - Browse to https://www.whatismyipaddress.com and verify that the public IP address and location correspond with PIP and Azure deployment region of your CSR NVA.
 
-![image](images/ipddress-pc.png)
+![image](images/ipaddress-pc.png)
 
 You are now accessing the internet from your Windows pc via the internet gateway in Azure.
 
