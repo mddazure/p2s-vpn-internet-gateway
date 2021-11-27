@@ -183,7 +183,7 @@ Follow these steps:
   
 - Tap the attachment and then tap the "send to" icon top right. Select "Share file ...".
 
-![image](images/sharefile-resized.png)
+![image](images/sharefile-resized.PNG)
 
 - Select OpenVPN.
 
