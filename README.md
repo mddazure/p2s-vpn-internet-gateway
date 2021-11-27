@@ -199,7 +199,7 @@ Follow these steps:
 
 - The connection will establish immediately.
 
-![image](images/connected-resized.png)
+![image](images/connected-resized.PNG)
 
 - On your device, browse to https://www.whatismyipaddress.com and verify that the public IP address and location correspond with PIP and Azure deployment region of your CSR NVA.
 
