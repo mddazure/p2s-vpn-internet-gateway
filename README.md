@@ -6,7 +6,7 @@ User remote access VPN solutions usually implement split tunnel. Internet traffi
 There are scenario's where internet traffic needs to the forced up the tunnel as well, to break out at the network hub. Think of:
 - Securing internet access when using public wifi access points.
 - Requirement to filter and scan internet access at a central firewall and proxy.
-- Hide or annonimize the user's public ip address.
+- Hide or anonymize the user's public ip address.
 - Geographically move the user's public ip address, for instance to access services not available at the user's location.
 
 This article describes a remote access internet gateway in Azure, and provides a reference implementation in Bicep.
