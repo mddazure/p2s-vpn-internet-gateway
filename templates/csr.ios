@@ -10,8 +10,6 @@ crypto ikev2 keyring azure-keyring
  peer 10.1.0.4
   address 10.1.0.4
   pre-shared-key P2S2021
- !
-!
 !
 crypto ikev2 profile azure-profile-connectionP2SGW
  match address local interface GigabitEthernet1
@@ -21,16 +19,15 @@ crypto ikev2 profile azure-profile-connectionP2SGW
  keyring local azure-keyring
  lifetime 28800
  dpd 10 5 on-demand
-
- crypto ipsec transform-set azure-ipsec-proposal-set esp-aes 256 esp-sha256-hmac
+!
+crypto ipsec transform-set azure-ipsec-proposal-set esp-aes 256 esp-sha256-hmac
  mode tunnel
 !
 crypto ipsec profile azure-ipsec-p2s
  set security-association lifetime kilobytes 102400000
  set transform-set azure-ipsec-proposal-set
  set ikev2-profile azure-profile-connectionP2SGW
-
- !
+!
 interface Tunnel101
  ip address 10.0.100.4 255.255.255.254
  ip nat inside
@@ -39,8 +36,8 @@ interface Tunnel101
  tunnel mode ipsec ipv4
  tunnel destination 10.1.0.4
  tunnel protection ipsec profile azure-ipsec-p2s
-
- interface GigabitEthernet1
+!
+interface GigabitEthernet1
  ip address dhcp
  ip nat inside
  negotiation auto
@@ -53,7 +50,7 @@ interface GigabitEthernet2
  negotiation auto
  no mop enabled
  no mop sysid
-
+!
 ip nat pool natpool 10.1.2.4 10.1.2.4 netmask 255.255.255.252
 ip nat inside source list 1 pool natpool overload
 ip nat inside source list GS_NAT_ACL interface GigabitEthernet1 vrf GS overload
@@ -62,8 +59,4 @@ ip route 10.1.0.0 255.255.255.0 GigabitEthernet1 10.1.1.1
 ip route 172.16.0.0 255.255.255.0 Tunnel101
 !
 ip access-list standard 1
- 10 permit 172.16.0.0 0.0.0.255
-
-
-
- 
+ 10 permit 172.16.0.0 0.0.0.255 
