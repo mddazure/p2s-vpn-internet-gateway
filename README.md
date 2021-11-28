@@ -191,7 +191,7 @@ Follow these steps:
 
 - In OpenVPN, select ADD.
 
-![image](images/add-resized.png)
+![image](images/add-resized.PNG)
   
 - Check "Connect after import" and select ADD.
 
