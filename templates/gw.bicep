@@ -326,7 +326,8 @@ resource outsideNic 'Microsoft.Network/networkInterfaces@2020-08-01' = {
           subnet: {
             id: resourceId('Microsoft.Network/virtualNetworks/subnets','VpnVNET','OutsideSubnet')
           }
-          privateIPAddress: OutsidePrivateIP          
+          privateIPAddress: OutsidePrivateIP 
+          publicIPAddress: csrPubIpV4         
         }
       }
     ]
