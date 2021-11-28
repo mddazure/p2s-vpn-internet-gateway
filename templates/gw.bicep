@@ -272,7 +272,7 @@ resource CsrRT 'Microsoft.Network/routeTables@2021-03-01' = {
 }
 //Storage account for boot diagnostics
 resource bootst 'Microsoft.Storage/storageAccounts@2021-04-01' = {
-  name: '${storagePrefix}${uniqueString(subscription().id)}'
+  name: '${storagePrefix}${uniqueString(resourceGroup().id)}'
   location: location
   sku: {
     name: 'Standard_LRS'

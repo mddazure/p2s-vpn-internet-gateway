@@ -53,9 +53,9 @@ Accept the terms for the CSR1000v Marketplace offer:
 
       az vm image terms accept --urn cisco:cisco-csr-1000v:16_12_5-byol:latest
 
-Deploy the Bicep template:
+Deploy the Bicep template, replacing `<location>` with the target Azure region:
 
-      az deployment sub create --location <location> --template-file templates/main.bicep
+      az deployment sub create --location <location> --template-file templates/main.bicep --parameters location=<location>
 
 Verify that all components in the diagram above have been deployed to the resourcegroup `p2s-vpn-gw` and are healthy.
 
