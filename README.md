@@ -145,6 +145,8 @@ Type `exit` twice to leave Config mode, returning to the # prompt.
 
 Type `show ip int brief` and verify interface Tunnel101 shows `up` for both Status and Protocol. This means that the site-to-site tunnel to the Gateway is established. It may take a few minutes for the connection status to show Connected in the Azure portal.
 
+Type `copy run start` and press enter to confirm the Destination filename. This persists the configuration.
+
 ## Client
 ### iOS and Android devices
 Install the OpenVPN client on your device, this is available free of charge from the Appstore.
