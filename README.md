@@ -134,6 +134,7 @@ interface GigabitEthernet2
 ip nat pool natpool 10.1.2.4 10.1.2.4 netmask 255.255.255.252
 ip nat inside source list 1 pool natpool overload
 ip nat inside source list GS_NAT_ACL interface GigabitEthernet1 vrf GS overload
+no ip route 0.0.0.0 0.0.0.0 10.1.1.1
 ip route 0.0.0.0 0.0.0.0 GigabitEthernet2 10.1.2.1
 ip route 10.1.0.0 255.255.255.0 GigabitEthernet1 10.1.1.1
 ip route 172.16.0.0 255.255.255.0 Tunnel101
